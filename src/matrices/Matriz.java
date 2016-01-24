@@ -65,4 +65,12 @@ public class Matriz {
         ret += "]\n";
         return ret;
     }
+    public void multiplicarMatrizSSV(double n, Matriz a) {
+int i, j, dimensionA;
+dimensionA=a.getDimension().height;
+for(i=0;i<dimensionA;i++)
+        for(j=0;j<dimensionA;j++)
+                a.datos[i][j]*=n;
+}
+
 }
