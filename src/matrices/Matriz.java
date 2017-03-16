@@ -48,6 +48,17 @@ public class Matriz {
         return matrizResultante; 
     } 
 
+public static Matriz matrizTranspuesta(Matriz matriz){
+    
+    Matriz nuevam=new Matriz(matriz.datos.length,matriz.datos[0].length,false);;
+    for(int i=0; i<nuevam.datos.length; i++)
+    {
+        for(int j=0; j<nuevam.datos.length; j++)
+            nuevam.datos[i][j]=matriz.datos[j][i];
+    }
+    return nuevam;
+}    
+    
     @Override
     public String toString(){
         String ret = "";
