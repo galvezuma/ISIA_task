@@ -1,3 +1,4 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -56,6 +57,17 @@ public class Matriz {
                 a.datos[i][j]*=n;
     }
 
+	public static Matriz matrizTranspuesta(Matriz matriz){
+    
+    Matriz nuevam=new Matriz(matriz.datos.length,matriz.datos[0].length,false);;
+    for(int i=0; i<nuevam.datos.length; i++)
+    {
+        for(int j=0; j<nuevam.datos.length; j++)
+            nuevam.datos[i][j]=matriz.datos[j][i];
+    }
+    return nuevam;
+	}  
+	
     @Override
     public String toString(){
         String ret = "";
