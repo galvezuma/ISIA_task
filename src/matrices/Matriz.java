@@ -47,7 +47,7 @@ public class Matriz {
         } 
         return matrizResultante; 
     } 
-	public static Matriz MultiplicarMatriz(Matriz a, Matriz b) throws DimensionesIncompatibles { 
+	public static Matriz MultiplicarDosMatrices(Matriz a, Matriz b) throws DimensionesIncompatibles { 
         if(! a.getDimension().height.equals(b.getDimension().width)) throw new DimensionesIncompatibles("La producto de matrices requiere matrices de dimensiones (n,m) y (m,n)");        
         int i, j, filasA, columnasA; 
         filasA = a.getDimension().height; 
