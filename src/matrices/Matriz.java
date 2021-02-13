@@ -48,6 +48,13 @@ public class Matriz {
         return matrizResultante; 
     } 
 
+    public static Matriz matrizInversa(Matriz a) throws DimensionesIncompatibles {
+        if(! a.getDimension().height.equals(a.getDimension().width)) throw new DimensionesIncompatibles("La matriz debe ser cuadrada");
+        double det=1/determinante(a);
+        Matriz nmatriz=matrizAdjunta(a);
+        multiplicarMatriz(det,nmatriz);
+        return nmatriz;
+    }
     @Override
     public String toString(){
         String ret = "";
