@@ -48,7 +48,6 @@ public class Matriz {
             } 
         } 
         return matrizResultante; 
-<<<<<<< HEAD
     } 
     public static Matriz multiplicarMatrices(Matriz a, Matriz b) throws DimensionesIncompatibles {
         Dimension dimensionesA = a.getDimension();
@@ -74,7 +73,6 @@ public class Matriz {
         }
 
         return matrizResultante;
-=======
     }
 
     
@@ -90,7 +88,6 @@ public class Matriz {
             } 
         } 
         return matrizTraspuesta; 
->>>>>>> Puertas_Invertir
     }
     
     @Override

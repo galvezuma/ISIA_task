@@ -17,11 +17,7 @@ public class Driver {
         
         try {
             System.out.println(Matriz.sumarDosMatrices(m1, m2));
-<<<<<<< HEAD
             System.out.println(Matriz.multiplicarMatrices(m2, m3));
-=======
-            System.out.println(Matriz.trasponerMatriz(m2));
->>>>>>> Puertas_Invertir
         } catch (DimensionesIncompatibles ex) {
             Logger.getLogger(Driver.class.getName()).log(Level.SEVERE, null, ex);
         }
