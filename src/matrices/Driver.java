@@ -14,6 +14,7 @@ public class Driver {
         System.out.println(m2);
         try {
             System.out.println(Matriz.sumarDosMatrices(m1, m2));
+            System.out.println(Matriz.trasponerMatriz(m2));
         } catch (DimensionesIncompatibles ex) {
             Logger.getLogger(Driver.class.getName()).log(Level.SEVERE, null, ex);
         }
