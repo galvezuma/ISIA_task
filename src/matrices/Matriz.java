@@ -48,6 +48,7 @@ public class Matriz {
             } 
         } 
         return matrizResultante; 
+<<<<<<< HEAD
     } 
     public static Matriz multiplicarMatrices(Matriz a, Matriz b) throws DimensionesIncompatibles {
         Dimension dimensionesA = a.getDimension();
@@ -73,6 +74,23 @@ public class Matriz {
         }
 
         return matrizResultante;
+=======
+    }
+
+    
+    public static Matriz trasponerMatriz(Matriz a) { 
+        int filasA = a.getDimension().height;
+        int columnasA = a.getDimension().width;
+        
+        Matriz matrizTraspuesta = new Matriz(columnasA, filasA, false);
+        
+        for (int i = 0; i < columnasA; i++) { 
+            for (int j = 0; j < filasA; j++) { 
+                matrizTraspuesta.datos[i][j] += a.datos[j][i]; 
+            } 
+        } 
+        return matrizTraspuesta; 
+>>>>>>> Puertas_Invertir
     }
     
     @Override
